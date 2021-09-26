@@ -1,0 +1,132 @@
+
+@import "productos.scss";
+@import "sobreNosotros.scss";
+@import "registrate.scss";
+@import "contacto.scss";
+@import "bootstrap.scss";
+
+$bgcolor: rgb(248, 247, 240) ;
+@mixin size ($ancho, $alto) {
+    height: $alto;
+    width: $ancho;  
+}
+
+
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+    background-color: $bgcolor !important
+
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.img--dimension {
+    height: max-content;
+}
+
+/* Header */
+
+.tituloNav {
+    float: inline-end;
+    color: rgb(226, 226, 80);
+    padding-top: 10px;
+}
+
+
+
+
+/* Productos */
+
+.productosUbicacion {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: space-evenly;
+}
+
+.cardProductos {
+    margin: 15px;
+}
+ 
+.imgProductos {
+    @include size(246px, 246px)
+}
+
+/* Contacto */
+
+.formulario {
+    background-color: $bgcolor;
+    text-align: center;
+ }
+
+
+ /* Sobre nosotros*/
+
+ .videoFabrica {
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative;
+ }
+
+ .videoFabrica iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+
+ }
+
+ .containerVideo {
+     width: 60%;
+     margin: auto;
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+
+/* Registrate */
+
+.containerForm {
+    padding: 50px;
+}
+
+#pruebaPedido {
+    background-color: white;
+    padding: 50px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.containerFormPedido {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+
+ 
+    
+    
+  
+
+  
+
+
+
+
+
+
+
+    
+
+
