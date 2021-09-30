@@ -1,4 +1,6 @@
 
+
+
 document.getElementById('formularioPedido').addEventListener('submit', crear);
 
 function crear(e) {
@@ -39,14 +41,19 @@ function volcar() {
 
         document.getElementById('pruebaPedido').innerHTML += 
         `
-        <h5>¡Nos alegra recibir su pedido! usted ha ordenado ${producto} de color ${color} x ${cantidad}un. Nos pondremos en contacto a la brevedad para coordinar forma de pago y entrega.</h5>
-        
+        <tr>
+            <td>${producto}</td>
+            <td>${color}</td>
+            <td></td>
+            <td>${cantidad}</td>
+        </tr>        
         `
     } 
-     localStorage.clear();
 
 }
 volcar();
+localStorage.clear();
+
 
 // let parrafo = document.createElement("p");
 // parrafo.innerHTML = "<h1>HOLA</h1>";

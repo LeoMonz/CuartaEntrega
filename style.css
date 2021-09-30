@@ -12474,15 +12474,15 @@ li {
 
 /* Productos */
 .productosUbicacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
   margin: 30px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
 }
 
 .cardProductos {
@@ -12494,10 +12494,28 @@ li {
   width: 246px;
 }
 
-/* Contacto */
+/* Mis Pedidos */
 .formulario {
   background-color: #f8f7f0;
   text-align: center;
+}
+
+#formularioPedido {
+  width: 80%;
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerFormPedido {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.precioPosicion {
+  margin: 10px;
+  text-align: start;
 }
 
 /* Sobre nosotros*/
