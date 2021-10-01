@@ -8,13 +8,17 @@ function crear(e) {
     
     let producto = document.getElementById('producto').value;
     let color = document.getElementById('color').value;
+    let precio = document.getElementById('precio').value;
     let cantidad = document.getElementById('cantidad').value;
 
     let muebles = {
         producto,
         color,
+        precio,
         cantidad
     }
+
+    
 
     if (localStorage.getItem('productos') === null) {
         let productos = [];
@@ -28,6 +32,8 @@ function crear(e) {
     }
     document.getElementById('formularioPedido').reset();
     volcar();
+
+   
 }
 
 function volcar() {
@@ -38,14 +44,15 @@ function volcar() {
         let producto = productos[i].producto;
         let color = productos[i].color;
         let cantidad = productos[i].cantidad;
+        let precio = productos[i].precio;
 
         document.getElementById('pruebaPedido').innerHTML += 
         `
         <tr>
             <td>${producto}</td>
             <td>${color}</td>
-            <td></td>
             <td>${cantidad}</td>
+            <td>${precio}</td>
         </tr>        
         `
     } 
@@ -53,6 +60,7 @@ function volcar() {
 }
 volcar();
 localStorage.clear();
+
 
 
 // let parrafo = document.createElement("p");

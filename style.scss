@@ -75,18 +75,45 @@ li {
     margin-right:auto;
  }
 
-
-.containerFormPedido {
+#listaPedidos {
     width: 80%;
+    text-align:center;
     margin-left: auto;
     margin-right:auto;
+    margin-top: 30px;
 }
 
-.precioPosicion {
-    margin: 10px;
-    text-align: start;
+.containerPedido {
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 
+#pruebaPedido {
+    background-color: white;
+    padding: 50px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.cantidadMargen {
+    margin-top: 15px;
+}
+
+.tableTotal {
+    caption-side: bottom;
+    border-collapse: collapse;
+    text-align: center;
+    width: 30%;
+    padding: 50px;
+    margin-right: 70px;
+    background-color: none !important;
+    
+}
+
+
+
+
+ 
  /* Sobre nosotros*/
 
  .videoFabrica {
@@ -117,19 +144,9 @@ li {
     padding: 50px;
 }
 
-#pruebaPedido {
-    background-color: white;
-    padding: 50px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-}
 
-.containerFormPedido {
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-}
+
+
 
 
  

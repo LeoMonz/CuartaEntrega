@@ -58,12 +58,47 @@
             </div>
         </div>
     </header>
+
+    <section class="containerLista">
+        <table id="listaPedidos" class="table">
+            <thead>
+                <th>Producto</th>
+                <th>Medidas</th>    
+                <th>Precio ($)</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mesa Aqua</td>
+                    <td>180cms x 100cms x 70cms</td>
+                    <td>54000</td>
+                </tr>
+                <tr>
+                    <td>Mesa Terra</td>
+                    <td>210cms x 110cms x 70cms</td>
+                    <td>60000</td>
+                </tr>
+                <tr>
+                    <td>Silla Bora</td>
+                    <td>60cms x 50cms x 70cms</td>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <td>Silla Bonet</td>
+                    <td>60cms x 60cms x 70cms</td>
+                    <td>7500</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
     
-        <form id="formularioPedido" class="containerForm">
+
+
+     <form id="formularioPedido" class="containerPedido">
             <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Producto</label>
             <select id="producto" class="form-select" aria-label="Default select example">
-                <option selected>Seleccione su producto</option>
+                <option selected class="colorIndicador">Seleccione su producto</option>
                 <option value="Mesa Aqua">Mesa Aqua</option>
                 <option value="Mesa Terra">Mesa Terra</option> 
                 <option value="Silla Bora">Silla Bora</option>
@@ -72,35 +107,32 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Color</label>
-                <select id="color" class="form-select" aria-label="Default select example">
-                <option selected>Seleccione su color</option>
+                <select id="color" class="form-select" aria-label="Default select example colorIndicador">
+                <option selected class="colorIndicador">Seleccione su color</option>
                 <option value="Caoba">Caoba </option>
                 <option value="Wengue">Wengue </option>
                 <option value="Cedro">Cedro </option>
                 </select>
             </div>
+            <label for="exampleFormControlInput1" class="form-label">Precio</label>
+            <input id="precio" class="form-control" placeholder="Ingrese el precio del producto que indica la lista" id="exampleFormControlInput1">
             <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
-            <input id="cantidad" class="form-control" id="exampleFormControlInput1">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label precioPosicion">Precio</label>
-                <div id="precio"></div>
-            </div>
+            <label for="exampleFormControlInput1" class="form-label cantidadMargen">Cantidad</label>
+            <input id="cantidad" class="form-control" placeholder="Ingrese la cantidad deseada" id="exampleFormControlInput1">
             </div>
             <button type="submit" class="btn btn-warning">Enviar</button>
             <button type="reset" class="btn btn-warning">Borrar</button>
             </div>
                
-        </form>
+    </form>
 
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-           <table class="table">
+    <div class=" container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <table class="table">
                <thead>
                    <th>Producto</th>
                    <th>Color</th>
-                   <th>Precio</th>
                    <th>Cantidad</th>
-                   <th>Total</th>
+                   <th>Precio</th>
                </thead>
                <tbody id="pruebaPedido">
                    <tr>
@@ -111,10 +143,17 @@
                     </tr>
                </tbody>
 
-           </table>
-        </div>
-
-
+        </table>
+       
+    </div>
+    <div class=" container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-end">
+        <table class="table tableTotal">
+            <tbody>
+                <td>TOTAL ($):</td>
+                <td>100</td>
+            </tbody>
+        </table>
+    </div>  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy;. Todos los derechos reservados Wood Innovation. <br><br><br> 02477-433546 Ugales 86, Pergamino, Buenos aires.</div></footer>

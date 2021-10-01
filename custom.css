@@ -1,6 +1,7 @@
 
 .card   {
     padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 #mainNav {
@@ -61,16 +62,41 @@
 .btn {
     padding: 10px;
     margin: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-#suPedido {
-    text-align: start
-}
 
 .table {
-    background-color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Staatliches', cursive;
     padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
+
+.table thead tr {
+    background-color: rgb(241, 243, 106);
+    text-align: center;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color:#f1f3e8;
+}
+
+.form-select {
+    color:#6c757d
+}
+
+.container {
+    max-width: 1180px;
+    min-width: 100px;
+}
+
+.form-control {
+    color: #6c757d !important;
+}
+
