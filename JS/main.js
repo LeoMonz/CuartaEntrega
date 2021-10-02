@@ -1,8 +1,8 @@
 
-
-
+//  Creamos un un objeto al hacer click //
 document.getElementById('formularioPedido').addEventListener('submit', crear);
 
+// Introducimos valores mediante la información que nos da el usuario//
 function crear(e) {
     e.preventDefault();
     
@@ -10,15 +10,17 @@ function crear(e) {
     let color = document.getElementById('color').value;
     let precio = document.getElementById('precio').value;
     let cantidad = document.getElementById('cantidad').value;
+    let total = JSON.parse(document.getElementById('cantidad').value) * JSON.parse(document.getElementById('precio').value)
 
     let muebles = {
         producto,
         color,
         precio,
-        cantidad
+        cantidad,
+        total
     }
 
-    
+  //  Creamos "productos" vacío y le pusheamos las propiedades del objeto creado anteriormente//
 
     if (localStorage.getItem('productos') === null) {
         let productos = [];
@@ -36,6 +38,7 @@ function crear(e) {
    
 }
 
+// Llamamos del localStorage las propiedades para devolver resultados al HTML //
 function volcar() {
     let productos = JSON.parse(localStorage.getItem('productos'));
     document.getElementById('pruebaPedido').innerHTML = "";
@@ -45,6 +48,8 @@ function volcar() {
         let color = productos[i].color;
         let cantidad = productos[i].cantidad;
         let precio = productos[i].precio;
+        let total = productos[i].total;
+        
 
         document.getElementById('pruebaPedido').innerHTML += 
         `
@@ -53,13 +58,19 @@ function volcar() {
             <td>${color}</td>
             <td>${cantidad}</td>
             <td>${precio}</td>
+            <td>${total}</td>
         </tr>        
         `
     } 
+    
+  
+
 
 }
 volcar();
 localStorage.clear();
+
+
 
 
 
