@@ -100,3 +100,8 @@
     color: #6c757d !important;
 }
 
+.nav-link {
+    cursor: pointer;
+    margin: 1px;
+}
+
