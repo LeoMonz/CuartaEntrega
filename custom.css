@@ -4,9 +4,13 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+
 #mainNav {
     background-color: rgba(10, 10, 10, 0.877);
+ 
 }
+
+
 
 .nav-link {
     color: rgba(173, 171, 171, 0.959)  !important;
