@@ -12495,6 +12495,15 @@ li {
 }
 
 /* Mis Pedidos */
+.btnMisPedidos {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+  float: right !important;
+}
+
 .formulario {
   background-color: #f8f7f0;
   text-align: center;

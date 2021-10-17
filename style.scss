@@ -63,6 +63,13 @@ li {
 
 /* Mis Pedidos */
 
+.btnMisPedidos {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    float: right !important;
+
+}
+
 .formulario {
     background-color: $bgcolor;
     text-align: center;

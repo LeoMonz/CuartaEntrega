@@ -74,6 +74,7 @@ localStorage.clear();
 
 
 
+
 // let parrafo = document.createElement("p");
 // parrafo.innerHTML = "<h1>HOLA</h1>";
 // if (saludo == "si") {
