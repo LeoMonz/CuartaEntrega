@@ -1,3 +1,5 @@
+// Eventos asignados al modal para su visualización
+
 const carritoAbrir = document.getElementById('boton-carrito');
 const carritoCerrar = document.getElementById('carritoCerrar');
 

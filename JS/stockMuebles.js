@@ -1,3 +1,5 @@
+// Array de objetos que determina el stock de productos que tenemos y sus propiedades para ser utilizada
+
 let stockMuebles = [
     {id: 1, nombre: "Mesa Aqua", desc: "Una mesa moderna que renovará tu comedor.", imagen: "assets/imagenes/mesa1.jpg", precio: 40000, cantidad: 1},
     {id: 2, nombre: "Mesa Terra", desc: "Combinando el estilo industrial para lograr un estilo sobrio.", imagen: "/assets/imagenes/mesa2.jpg", precio: 47000, cantidad: 1},

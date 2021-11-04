@@ -1,18 +1,24 @@
+// Se llama al array 
+
 const URLJSON = "data/datos.json"
+
+// Creamos un botón para asociarlo a un evento
 
 $('#vendedores').append('<button id="btnvendedores" class="btn btn-warning">Contactar Vendedores</button>');
 
+// El evento coloca en el html las propiedades del array 
 
-$('#btnvendedores').click(() => {
+$('#btnvendedores').on( "click", function(event) {
+    event.preventDefault();
     $.getJSON(URLJSON, function(respuesta, estado) {
         if (estado === "success") {
-            let misDatos = respuesta;
+            let  misDatos = respuesta;
             for(const dato of misDatos) {
-                $("#vendedoresDiv").prepend(`<div id="productosUbicacion">
-                                    <h2>${dato.name}<h2>
-                                    <h5>${dato.tel}<h5>
-                                    <h5>${dato.correo}<h5>
-                                            </div> `)
+                $('#btnvendedores').append(`<div class="datosVendedor" id="productosUbicacion">
+                                                     <h4>${dato.name}</h4>
+                                                     <p>${dato.tel}</p>
+                                                     <p>${dato.correo}</p>
+                                                            </div>`)
             }
         }
     })

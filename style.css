@@ -12465,15 +12465,13 @@ li {
   height: max-content;
 }
 
-/* Header */
 .tituloNav {
   float: inline-end;
   color: #e2e250;
   padding-top: 10px;
 }
 
-/* Productos */
-#productosUbicacion {
+.productosUbicacion {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -12510,19 +12508,6 @@ li {
   outline: none;
 }
 
-#contenedor-productos {
-  max-width: 1200px;
-  margin: 60px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .producto {
   max-width: 30%;
   padding: 10px;
@@ -12534,7 +12519,11 @@ li {
 select {
   display: inline;
   text-align: center;
-  border: 1px solid lightskyblue;
+  border: 1px solid;
+}
+
+select:hover {
+  cursor: pointer;
 }
 
 .modal-contenedor {
@@ -12588,13 +12577,7 @@ select {
 #tituloModal {
   color: whitesmoke;
   background: rgba(129, 119, 29, 0.959);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 190px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center !important;
 }
 
 .modal-carrito h5 {
@@ -12627,9 +12610,22 @@ select {
   padding-top: 10px;
 }
 
+.subtituloEnCarrito {
+  margin: 5px 0;
+  padding: 5px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .productoEnCarrito {
   margin: 5px 0;
   padding: 5px 60px;
+  padding-top: 2px;
+  margin-top: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12643,8 +12639,9 @@ select {
 }
 
 .boton-eliminar {
-  background-color: white;
+  background-color: #f8f7f0;
   border: none;
+  height: 0;
 }
 
 .boton-eliminar:hover {
@@ -12663,12 +12660,26 @@ select {
           box-shadow: rgba(0, 0, 0, 0.5);
 }
 
+.selectCuotas {
+  display: inline;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #c9cac4 !important;
+}
+
 .imgProductos {
   height: 246px;
   width: 246px;
 }
 
-/* Mis Pedidos */
+#botonGracias {
+  margin-left: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .formulario {
   background-color: #f8f7f0;
   text-align: center;
@@ -12737,8 +12748,14 @@ select {
   margin-bottom: 50px;
 }
 
-/* Registrate */
 .containerForm {
   padding: 50px;
+}
+
+.datosVendedor {
+  padding: 15px;
+  margin: 5px;
+  border: solid 1px black;
+  border-radius: 0.25rem;
 }
 /*# sourceMappingURL=style.css.map */
